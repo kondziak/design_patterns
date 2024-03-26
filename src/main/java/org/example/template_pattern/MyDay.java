@@ -1,0 +1,22 @@
+package org.example.template_pattern;
+
+public class MyDay extends WeekDay {
+
+    protected void work() {
+        System.out.println("code monkey get up, get coffee");
+    }
+
+    @Override
+    public int goToWork(TransportType transport) {
+        switch(transport) {
+            case CAR:
+                return 15;
+            case BIKE:
+                return 25;
+            case TRAM:
+                return 20;
+            default:
+                return 20;
+        }
+    }
+}
